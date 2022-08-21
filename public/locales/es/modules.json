@@ -1,0 +1,22 @@
+{
+  "Grid": {
+    "links": [
+      {
+        "title": "Documentación",
+        "description": "Encuentre información detallada sobre las funciones y la API de Next.js."
+      },
+      {
+        "title": "Aprendé",
+        "description": "¡Aprende sobre Next.js en un curso interactivo con cuestionarios!"
+      },
+      {
+        "title": "Ejemplos",
+        "description": "Descubra e implemente proyectos 'boilerplate' de Next.js de ejemplo."
+      },
+      {
+        "title": "Desplegar",
+        "description": "Implemente instantáneamente su sitio Next.js en una URL pública con Vercel."
+      }
+    ]
+  }
+}

@@ -1,6 +1,7 @@
 {
   "title": "Welcome to ",
   "title-2": "Next.js!",
+  "lang-button": "Change Language",
   "subtitle": "Get started by editing ",
   "subtitle-2": "pages/index.js",
   "footer": "Powered by "

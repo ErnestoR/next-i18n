@@ -2,6 +2,16 @@
   padding: 0 2rem;
 }
 
+.langButton {
+  margin: 8px;
+  padding: 8px 16px;
+  border: 1px solid #eeeeee;
+}
+
+.langButton:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 .main {
   min-height: 100vh;
   padding: 4rem 0;

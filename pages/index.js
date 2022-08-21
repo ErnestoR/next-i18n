@@ -1,14 +1,15 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import Grid from "@/modules/Grid";
-
-import styles from "../styles/Home.module.css";
+import styles from "@/styles/Home.module.css";
 
 export default function Home() {
-  const { t } = useTranslation("common");
+  const { t, i18n } = useTranslation("common");
+  const currentLanguage = i18n.language;
 
   return (
     <div className={styles.container}>
@@ -23,12 +24,14 @@ export default function Home() {
           {t("title")}
           <a href="https://nextjs.org">{t("title-2")}</a>
         </h1>
+        <Link href="/" locale={currentLanguage === "en" ? "es" : "en"}>
+          <a className={styles.langButton}>{t("lang-button")}</a>
+        </Link>
 
         <p className={styles.description}>
           {t("subtitle")}
           <code className={styles.code}>{t("subtitle-2")}</code>
         </p>
-
         <Grid />
       </main>
 
@@ -52,7 +55,6 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common", "modules"])),
-      // Will be passed to the page component as props
     },
   };
 }

@@ -1,3 +1,8 @@
 {
-  "title": "Casa | next-i18next"
+  "title": "¡Bienvenido a ",
+  "title-2": "Next.js!",
+  "lang-button": "Cambiar idioma",
+  "subtitle": "Comience editando ",
+  "subtitle-2": "pages/index.js",
+  "footer": "Energizado por "
 }
